@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <main class="body">
+        <div class="header">
+          <div class="file-input">
+            <label for="fileInput" class="label">Choose a TXT File</label>
+            <input type="file" id="fileInput" accept=".txt" />
+          </div>
+
+          <label for="sourceEncoding">Source Encoding:</label>
+          <select id="sourceEncoding">
+            <option value="utf-8">UTF-8</option>
+            <option value="windows-1251">Windows-1251</option>
+            <option value="ASCII">ASCII</option>
+          </select>
+
+          <label for="targetEncoding">Target Encoding:</label>
+          <select id="targetEncoding">
+            <option value="utf-8">UTF-8</option>
+            <option value="windows-1251">Windows-1251</option>
+            <option value="ASCII">ASCII</option>
+          </select>
+        </div>
+        <div class="editor">
+          <textarea
+            id="textArea"
+            placeholder="File content will appear here..."
+          ></textarea>
+          <div class="buttons">
+            <button id="converBtn">Convert</button>
+            <button id="downloadBtn">Download</button>
+          </div>
+        </div>
+      </main>
+    </div>
     <script src="./js/app.js"></script>
   </body>
 </html>
